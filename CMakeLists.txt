@@ -5,4 +5,3 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(RPC_Client client.c common_clnt.c util.c)
 add_executable(RPC_Server server.c)
-add_executable(RPC_Main main.c)
