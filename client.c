@@ -71,11 +71,6 @@ char* executeCommand(CLIENT *cl, char hostname[256], char *input) {
         }
     }
 
-    if (*opResult == 0) {
-        clnt_perror(cl, hostname);
-        exit(EXIT_FAILURE);
-    }
-
     printf("Back from remote call %f\n", *opResult);
 
     char full[1024];
