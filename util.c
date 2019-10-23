@@ -54,7 +54,8 @@ static char* substr(const char *src, int m, int n)
 {
     int len = n - m;
     char *dest = (char*) malloc(sizeof(char) * (len + 1));
-    for (int i = m; i < n && (*src != '\0'); i++)
+    int i;
+    for (i = m; i < n && (*src != '\0'); i++)
     {
         *dest = *(src + i);
         dest++;
