@@ -15,8 +15,8 @@ typedef struct {
 } Command;
 
 typedef struct{
-    int operand1;
-    int operand2;
+    double operand1;
+    double operand2;
 } Operands;
 
 static regex_t loadRegex(char* REGEX) {
