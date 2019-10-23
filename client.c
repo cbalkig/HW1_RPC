@@ -35,7 +35,7 @@ Command getCommand(regex_t regex, char *input) {
 }
 
 char* executeCommand(CLIENT *cl, char hostname[256], char *input) {
-    regex_t regex = loadRegex("([0-9.]+)[ ]*([+-\\*\\/])[ ]*([0-9.]+)");
+    regex_t regex = loadRegex("([0-9.]+|inf)[ ]*([+*\\/-])[ ]*([0-9.]+|inf)");
     printf("Input\t\t: %s\n", input);
 
     Command command = getCommand(regex, input);
